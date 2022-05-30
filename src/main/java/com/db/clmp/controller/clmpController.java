@@ -1,4 +1,4 @@
-package com.db.clmp.Controller;
+package com.db.clmp.controller;
 
 import com.db.clmp.data.nacedb;
 import com.db.clmp.service.INaceService;

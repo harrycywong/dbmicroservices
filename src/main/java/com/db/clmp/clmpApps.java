@@ -18,6 +18,7 @@ import static springfox.documentation.builders.PathSelectors.regex;
 
 // http://localhost:8099/getNaceDetails/399475
 // http://localhost:8099/getNaceDetails/all
+// http://localhost:8099/swagger-ui/
 
 @SpringBootApplication
 @OpenAPIDefinition
