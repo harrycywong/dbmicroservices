@@ -6,6 +6,8 @@ logging:
     org.springframework: INFO
 
 management:
+  server:
+    port: 8099
   endpoints:
     web:
       exposure:
@@ -36,6 +38,9 @@ spring:
         format_sql: true
         naming:
           physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
 
 application:
   name: dbCLMPAPI

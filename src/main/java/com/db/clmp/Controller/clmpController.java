@@ -24,22 +24,20 @@ public class clmpController {
         this.naceService = naceService;
     }
 
-    @GetMapping("/getNaceDetails/{id}")
+    @GetMapping("/api/getNaceDetails/{id}")
     public nacedb getNACE (@PathVariable long id) {
         nacedb result = null;
 
         try {
-            log.info ("Hello by 1...");
             result =naceService.findById(id);
         } catch (Exception e) {
-            log.info ("Hello by 2...");
             log.error (e.getMessage());
         }
 
         return result;
     }
 
-    @GetMapping("/getNaceDetails/all")
+    @GetMapping("/api/getNaceDetails/all")
     public List<nacedb> getAllNACE () {
         List<nacedb> result = (List<nacedb>) naceService.findAll();
         log.info (result.toString());
@@ -47,7 +45,7 @@ public class clmpController {
 
     }
 
-    @RequestMapping (value = "/putNaceDetails", method = RequestMethod.POST)
+    @RequestMapping (value = "/api/putNaceDetails", method = RequestMethod.POST)
     public ResponseEntity<nacedb> create(@RequestBody nacedb inputvalue) throws URISyntaxException {
         log.info("Received JSON...");
         log.info (inputvalue.toString());
