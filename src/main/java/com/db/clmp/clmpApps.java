@@ -16,8 +16,8 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import static springfox.documentation.builders.PathSelectors.regex;
 
-// http://localhost:8099/getNaceDetails/399475
-// http://localhost:8099/getNaceDetails/all
+// http://localhost:8099/api/getNaceDetails/399475
+// http://localhost:8099/api/getNaceDetails/all
 // http://localhost:8099/swagger-ui/
 
 // dbnaceSpringClient
