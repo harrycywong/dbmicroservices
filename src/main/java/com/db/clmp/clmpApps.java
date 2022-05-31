@@ -38,7 +38,7 @@ public class clmpApps
     public Docket productApi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .paths(regex("/api/putNaceDetails.*"))
+                .paths(regex("/api.*"))
                 .apis (RequestHandlerSelectors.basePackage("com.db.clmp.controller"))
                 .build();
     }
